@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 		cout << "Invalid usage.\n" << "Correct usage: \n" << "./network option\n";
 		cout << "Valid options: \n" << "A: Train the classifier\n" << "B: Run the classifier over the test file\n" << "C: Predict a crime\n";
 		cout << "The first time the program is run, the A parameter must be called first.\n";
-		cout << "The program will not run over the test file or predict a crime if it has not been trained first.\n";
+		cout << "The program will not run over the test file or predict if it has not been trained first.\n";
 		exit(0);
 	}
 	//The parameter A will train the network
