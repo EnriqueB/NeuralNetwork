@@ -57,10 +57,11 @@ int main(int argc, char *argv[]) {
 	else if (argv[1][0] == 'B') {
 		double** data = new double*[TESTINGMEMORY];
 		for (int i = 0; i < TESTINGMEMORY; i++) {
-			data[i] = new double[77];
+			data[i] = new double[INPNEURONS+OUTNEURONS];
 		}
 		NeuralNetwork network("saved.txt");
 		network.runTest(data);
+		//free memory
 		for (int i = 0; i < TESTINGMEMORY; i++) {
 			delete[] data[i];
 		}
